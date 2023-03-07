@@ -60,7 +60,7 @@ for (let i = 0; i < teamMembers.length; i++) {
     members.append(rule);
 
     const img = document.createElement("img");
-    img.src = teamMembers[i].foto;
+    img.src = "img/" + teamMembers[i].foto;
     members.append(img);
 }
 
