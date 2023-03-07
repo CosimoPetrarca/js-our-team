@@ -40,5 +40,27 @@ for (let i = 0; i < teamMembers.length; i++) {
     console.log(`Nome: ${teamMembers[i].nome}`);
     console.log(`Ruolo: ${teamMembers[i].ruolo}`);
     console.log(`Foto: ${teamMembers[i].foto}`);
-  }
+}
+
+/* Stampare le stesse informazioni su DOM sottoforma di stringhe */
+const teamlist = document.getElementById("team-list");
+
+for (let i = 0; i < teamMembers.length; i++) {
+    const members = document.createElement("div");
+    members.classList.add("member");
+    teamlist.append(members);
+
+    const name = document.createElement("p");
+    name.innerHTML = `Nome: ${teamMembers[i].nome}`;
+    members.append(name);
+
+    const rule = document.createElement("p");
+    rule.innerHTML = `Ruolo: ${teamMembers[i].ruolo}`;
+    members.append(rule);
+
+    const img = document.createElement("img");
+    img.innerHTML = `Foto: ${teamMembers[i].foto}`;
+    members.append(img);
+}
+
   
