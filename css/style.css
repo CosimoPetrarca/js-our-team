@@ -29,16 +29,18 @@ main {
 }
 
 /* Stili per la sezione del team */
-#team {
-    text-align: center;
+#team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
-#team h2 {
+#team-list h2 {
     margin-top: 0;
 }
 
 .member {
-    display: inline-block;
     margin: 20px;
     border: 1px solid #333;
     border-radius: 20px;
